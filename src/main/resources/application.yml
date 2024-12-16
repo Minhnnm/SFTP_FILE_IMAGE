@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo_sftp
+  datasource:
+    url: jdbc:mysql://localhost:3306/image_sftp?createDatabaseIfNotExist=true&autoReconnect=true&userSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: a123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+sftp:
+  host: 192.168.112.131
+  port: 22
+  uid: minhnn
+  pwd: a123456
+  base-path: /image-sftp
